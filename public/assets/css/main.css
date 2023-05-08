@@ -139,7 +139,7 @@ button {
 html {
   scroll-behavior: smooth; }
 
-:root {
-  font-size: 62.5%; }
+a {
+  color: inherit; }
 
 /*# sourceMappingURL=main.css.map */
