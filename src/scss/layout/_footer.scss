@@ -12,7 +12,7 @@
             &__link {
                 color: $text-color;
 
-                &__about-us, &__media-assets, &__product-releases, &__contact {
+                &__help-center, &__work-with-us {
                     &::first-letter {
                         text-transform: capitalize;
                     }

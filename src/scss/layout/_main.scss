@@ -3,36 +3,56 @@
     padding: 0 1.5rem;
     position: relative;
 
+    @include tablet {
+            padding: 0 2.5rem;
+    }
+
     &__section {
         &__articles {
             &__list {
                 &__link {
                     &__article {
                         margin-top: 2.5rem;
+
+                        @include tablet {
+                            @include displayFlex(row, center, center);
+                            gap: 2rem;
+                        }
         
                         &__image {
                             width: 100%;
-                            height: 12rem;
+                            max-height: 20rem;
                             border-radius: 1rem;
+
+                            @include tablet {
+                                width: 50%;
+                            }
                         }
-        
-                        &__title {
-                            margin-top: 0.5rem;
-                            color: $text-color;
-                            font: $bold-roboto-font-24px;
-                            line-height: 1.6rem;
-                        }
-        
-                        &__content, &__quote {
-                            margin: 0.5rem 0 0.2rem 0;
-                            color: $content-color;
-                            font: $regular-roboto-font-14px;
-                            line-height: 1.2rem;
-                        }
-        
-                        &__date {
-                            font: $light-roboto-font-14px;
-                            color: $date-color;
+                        
+                        &__container {
+                            &__title {
+                                margin-top: 0.5rem;
+                                color: $text-color;
+                                font: $bold-roboto-font-24px;
+                                line-height: 1.6rem;
+                            }
+            
+                            &__content, &__quote {
+                                margin: 0.5rem 0;
+                                color: $content-color;
+                                font: $regular-roboto-font-14px;
+                                line-height: 1.2rem;
+                                overflow: hidden;
+                                -webkit-box-orient: vertical;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 3;
+                            }
+            
+                            &__date {
+                                font: $light-roboto-font-14px;
+                                color: $date-color;
+                            }
+
                         }
                     }
                 }
@@ -70,6 +90,7 @@
                     }
 
                     &__date {
+                        margin-top: 0.5rem;
                         font: $light-roboto-font-12px;
                         color: $date-color;
                     }

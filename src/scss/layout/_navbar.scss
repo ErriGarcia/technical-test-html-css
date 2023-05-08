@@ -1,7 +1,11 @@
 .navbar {
     padding: 0 1.5rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     font: $regular-roboto-font-14px;
+
+    @include tablet {
+            padding: 0 2.5rem;
+    }
     
     &__list {
         @include displayFlex(row, space-between, center);
