@@ -309,6 +309,7 @@ a {
         font-size: 1.2rem; }
 
 .main-pages-template {
+  margin-top: 2rem;
   height: 65vh;
   padding: 0 2.5rem;
   color: #222;
@@ -331,8 +332,10 @@ a {
     color: #222; }
 
 .container {
-  margin: auto;
-  max-width: 80rem;
   padding: 0 1rem; }
+  @media all and (min-width: 700px) {
+    .container {
+      margin: auto;
+      max-width: 80rem; } }
 
 /*# sourceMappingURL=main.css.map */
