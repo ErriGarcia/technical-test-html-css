@@ -1,12 +1,14 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
+
 html,
 body,
 div,
@@ -88,13 +90,14 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  text-decoration: none; }
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -108,38 +111,45 @@ hgroup,
 menu,
 nav,
 section {
-  display: block; }
+    display: block;
+}
 
 body {
-  line-height: 1; }
+    line-height: 1;
+}
 
 ol,
 ul {
-  list-style: none; }
+    list-style: none;
+}
 
 blockquote,
 q {
-  quotes: none; }
+    quotes: none;
+}
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
-  content: none; }
+    content: '';
+    content: none;
+}
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 
 button {
-  background: none;
-  border: none; }
+    background: none;
+    border: none;
+}
 
 html {
-  scroll-behavior: smooth; }
+    scroll-behavior: smooth;
+}
 
 :root {
-  font-size: 62.5%; }
-
-/*# sourceMappingURL=main.css.map */
+    font-size: 62.5%;
+}
