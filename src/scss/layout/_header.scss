@@ -1,8 +1,16 @@
 .header {
-    padding: 0 24px;
-    margin-top: 24px;
+    padding: 0 1.5rem;
+    margin-top: 1.5rem;
+    @include displayFlex(row, center, center);
+    gap: 1rem;
 
     &__title {
         font: $bold-roboto-font-24px;
+        color: $text-color;
+
+        &::first-letter {
+            text-transform: capitalize;
+        }
+
     }
 }

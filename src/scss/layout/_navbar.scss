@@ -1,0 +1,16 @@
+.navbar__section {
+    padding: 0 1.5rem;
+    margin-top: 1rem;
+    font: $regular-roboto-font-14px;
+    &__navbar {
+        
+        &__list {
+            @include displayFlex(row, space-between, center);
+            gap: 0.5rem;
+
+            &__link::first-letter {
+                text-transform: capitalize;
+            }
+        }
+    }
+}
