@@ -1,4 +1,9 @@
 .header {
+    @include desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     &__link {
         padding: 0 1.5rem;
         margin-top: 2.5rem;
@@ -6,7 +11,11 @@
         gap: 1rem;
 
         @include tablet {
-                padding: 0 2.5rem;
+            padding: 0 2.5rem;
+        }
+        @include desktop {
+            margin-top: 0;
+            padding: 1.5rem 0;
         }
     }
 }

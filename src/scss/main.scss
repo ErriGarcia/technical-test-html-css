@@ -6,3 +6,9 @@
 @import 'layout/main';
 @import 'layout/footer';
 @import 'pages/pages-template';
+
+.container {
+    margin: auto;
+    max-width: 80rem;
+    padding: 0 1rem;
+}

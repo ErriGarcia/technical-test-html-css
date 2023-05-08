@@ -1,35 +1,40 @@
 .footer {
-    position: absolute;
+    // position: absolute;
     width: 100%;
-    margin-top: 2rem;
     background-color: $background-color;
-    padding: 1.5rem;
+    padding: 1.5rem 0;
     font: $regular-roboto-font-14px;
-    @include displayFlex(row, space-between, center);
+    margin-top: 2rem;
 
-    &__navbar {
-        &__list {
-            &__link {
-                color: $text-color;
-
-                &__help-center, &__work-with-us {
-                    &::first-letter {
-                        text-transform: capitalize;
+    // @include tablet {
+    //     padding: 1.5rem 2.5rem;
+    // }
+    &__container {
+        @include displayFlex(row, space-between, center);
+        &__navbar {
+            &__list {
+                &__link {
+                    color: $text-color;
+    
+                    &__help-center, &__work-with-us {
+                        &::first-letter {
+                            text-transform: capitalize;
+                        }
                     }
                 }
             }
         }
-    }
-
-    &__social-section {
-       @include displayFlex(row, center, center);
-       gap: 1rem;
-
-       &__list {
-        &__facebook, &__twitter, &__instagram {
-            color: $text-color;
-            font-size: 1.2rem;
+    
+        &__social-section {
+           @include displayFlex(row, center, center);
+           gap: 1rem;
+    
+           &__list {
+            &__facebook, &__twitter, &__instagram {
+                color: $text-color;
+                font-size: 1.2rem;
+            }
+           }
         }
-       }
     }
 }
