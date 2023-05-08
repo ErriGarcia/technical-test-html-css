@@ -7,6 +7,11 @@
     @include tablet {
         min-height: 73vh;
     }
+
+    @include desktop {
+        min-height: 85vh;
+    }
+    
     &__title {
         font: $bold-roboto-font-24px;
         text-transform: capitalize;

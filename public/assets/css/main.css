@@ -316,6 +316,9 @@ a {
   @media all and (min-width: 700px) {
     .main-pages-template {
       min-height: 73vh; } }
+  @media all and (min-width: 1024px) {
+    .main-pages-template {
+      min-height: 85vh; } }
   .main-pages-template__title {
     font: 700 24px "Public Sans", sans-serif;
     text-transform: capitalize; }
