@@ -1,34 +1,78 @@
 .main {
     margin-top: 2rem;
     padding: 0 1.5rem;
+    position: relative;
 
     &__section {
+        &__articles {
+            &__list {
+                &__link {
+                    &__article {
+                        margin-top: 2.5rem;
+        
+                        &__image {
+                            width: 100%;
+                            height: 12rem;
+                            border-radius: 1rem;
+                        }
+        
+                        &__title {
+                            margin-top: 0.5rem;
+                            color: $text-color;
+                            font: $bold-roboto-font-24px;
+                            line-height: 1.6rem;
+                        }
+        
+                        &__content, &__quote {
+                            margin: 0.5rem 0 0.2rem 0;
+                            color: $content-color;
+                            font: $regular-roboto-font-14px;
+                            line-height: 1.2rem;
+                        }
+        
+                        &__date {
+                            font: $light-roboto-font-14px;
+                            color: $date-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__aside {
+        &__title {
+            margin-top: 2.5rem;
+            font: $bold-roboto-font-24px;
+            color: $text-color;
+
+            &::first-letter {
+                text-transform: capitalize;
+            }
+        }
+
         &__link {
             &__article {
-                margin-top: 1.5rem;
-
+                @include displayFlex(row, center, flex-start);
+                gap: 1rem;
+                margin-top: 1rem;
+                color: $text-color;
                 &__image {
-                    width: 100%;
-                    height: 12rem;
-                    border-radius: 1rem;
+                    width: 10rem;
+                    border-radius: 0.8rem;
                 }
 
-                &__title {
-                    margin-top: 0.5rem;
-                    color: $text-color;
-                    font: $bold-roboto-font-24px;
-                    line-height: 1.6rem;
-                }
+                &__text-container {
+                    @include displayFlex(column, space-between, flex-start);
+                    &__title {
+                        font: $bold-roboto-font-14px;
+                        line-height: 1rem;
+                    }
 
-                &__content, &__quote {
-                    margin: 0.5rem 0 0.2rem 0;
-                    color: $content-color;
-                    font: $regular-roboto-font-14px;
-                }
-
-                &__date {
-                    font: $light-roboto-font-14px;
-                    color: $date-color;
+                    &__date {
+                        font: $light-roboto-font-12px;
+                        color: $date-color;
+                    }
                 }
             }
         }
