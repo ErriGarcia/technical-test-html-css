@@ -142,4 +142,10 @@ html {
 a {
   color: inherit; }
 
+.header {
+  padding: 0 24px;
+  margin-top: 24px; }
+  .header__title {
+    font: 700 24px "Open Sans", sans-serif; }
+
 /*# sourceMappingURL=main.css.map */
